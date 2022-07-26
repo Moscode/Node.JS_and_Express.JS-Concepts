@@ -1,13 +1,8 @@
-// Globals - No Window !!!
+// CommonJS, every file is module (by default)
+// Modules - Encapsulated Code (only share minimum)
+const names = require('./3-names');
+const greeting = require('./4-utils')
 
-//__dirname  - path to current directory
-//__filename - file name
-// require   - function to use modules (CommonJS)
-// module    - info about current module (file)
-// process   - info about env where the program is being executed
-
-console.log(__dirname)
-
-setInterval(() =>{
-        console.log('Interver...')
-}, 2000)
+greeting(names.new_name)
+greeting(names.new_name2)
+greeting(names.new_name3)
